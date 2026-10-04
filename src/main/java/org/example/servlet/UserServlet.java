@@ -27,6 +27,14 @@ public class UserServlet extends HttpServlet {
 
     //    Here u are seeing all methods return type is void because we dont have to return anything we simply have to get the values from request and
 //    have to set the values in response object. afterwards tomcat server will handle
+
+
+
+//    Here in below methods we seeing HttpServletRequest which extends ServletRequest and similer for ServletResponse
+//    which is send by Tomcat Servlet Container..
+
+//    but tomcat by default gave us ServletRequest and ServletResponse but we are using HttpServletRequest and HttpServletResponse because we are using HTTP protocol
+//    if we do to service() implementation of HttpServlet we can find out there.
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
         Integer id = Integer.parseInt(req.getParameter("id"));
