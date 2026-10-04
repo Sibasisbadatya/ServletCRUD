@@ -22,11 +22,11 @@ public class UserServlet extends HttpServlet {
 
 //    we also learnt that tomcat is acting as a servlet container and this UserServlet is like a servlet so
 //    in the servlet container it has HttpRequest and HttpResponse object and it passes to multiple
-//    servelets according to end points and there servlets will check the request and set in response
+//    servelets according to end points and there servlets will check the request and set data in response
 
 
-    //    Here u are seeing all methods retturn type is void because we dont have to return anything we simply have to get the values from request and
-//    have to set the value sin response object. afterwards tomcat server will handle
+    //    Here u are seeing all methods return type is void because we dont have to return anything we simply have to get the values from request and
+//    have to set the values in response object. afterwards tomcat server will handle
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
         Integer id = Integer.parseInt(req.getParameter("id"));
